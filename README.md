@@ -24,7 +24,7 @@
 
 ## Description
 
-Projeto criado com o intuito de praticar [Nest](https://github.com/nestjs/nest).
+Projeto desenvolvido com o objetivo de praticar o uso do [Nest](https://github.com/nestjs/nest).
 
 ## Project setup
 
