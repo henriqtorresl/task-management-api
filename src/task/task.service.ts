@@ -36,11 +36,11 @@ export class TaskService {
     return this.tasks.filter((task) => {
       let match: boolean = true;
 
-      if (params.status != undefined && !params.status.includes(task.status)) {
+      if (params.status != undefined && !task.status.includes(params.status)) {
         match = false;
       }
 
-      if (params.title != undefined && !params.title.includes(task.title)) {
+      if (params.title != undefined && !task.title.includes(params.title)) {
         match = false;
       }
 
