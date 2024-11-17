@@ -31,7 +31,7 @@ export class TaskDto {
 
   @IsEnum(TaskStatusEnum)
   @IsOptional()
-  status: TaskStatusEnum;
+  status: string;
 
   @IsDateString()
   expirationDate: Date;
