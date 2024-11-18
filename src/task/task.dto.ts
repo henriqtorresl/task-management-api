@@ -41,3 +41,8 @@ export interface FindAllQueryParams {
   title: string;
   status: string;
 }
+
+export class TaskRouteParameters {
+  @IsUUID()
+  id: string;
+}
