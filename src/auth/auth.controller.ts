@@ -8,10 +8,10 @@ export class AuthController {
 
   @HttpCode(HttpStatus.OK) // Com isso ele vai parar de lançar o status 201 (created) e vai retornar o 200
   @Post('login')
-  signIn(
+  async signIn(
     @Body('username') username: string,
     @Body('password') password: string,
-  ): AuthResponseDto {
-    return this.authService.signIn(username, password);
+  ): Promise<AuthResponseDto> {
+    return await this.authService.signIn(username, password);
   }
 }
